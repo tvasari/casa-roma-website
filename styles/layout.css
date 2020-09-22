@@ -1,0 +1,159 @@
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size:  14px;
+  line-height: 1.6em;
+}
+
+body {
+  color: #CBCBCB;
+  background-color: #4A4E57;
+}
+
+a {
+  color: #DC3545;
+  outline: none;
+  text-decoration: none!important; 
+}
+
+a:active, a:focus {
+  background: transparent;
+}
+
+nav, body, input, textarea {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+*, *::before, *::after {
+  transition: all 0.2s ease-in-out;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, .heading {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  line-height: normal;
+  font-weight: normal;
+}
+
+address {
+  font-style: normal; 
+  font-weight: normal;
+}
+
+.font-xs {
+  font-size: 0.8rem;
+}
+
+/*Navbar-Top*/
+#secondaryNavbar .navbar-nav .nav-item {
+  display: flex;
+}
+
+#secondaryNavbar .navbar-nav .nav-item::after {
+  content: "|";
+  margin-left: 10px;
+  align-self: center;
+}
+
+#secondaryNavbar .navbar-nav .nav-item:last-child::after {
+  content: "";
+  margin-left: 0;
+}
+
+.social-icon {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icon a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+  color: #32353C;
+  background-color: #FFF;
+}
+
+.social-icon li {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.social-icon a:hover {
+  color: #FFF!important;
+}
+
+.favicon-facebook:hover { 
+  background-color: #3B5998!important; 
+}
+.favicon-twitter:hover { 
+  background-color: #00ACEE!important; 
+}
+.favicon-instagram:hover { 
+  background-color: #EA4C89!important; 
+}
+.favicon-linkedin:hover { 
+  background-color: #0E76A8!important; 
+}
+.favicon-pinterest:hover { 
+  background-color: #c8232c!important; 
+}
+
+/*Header*/
+#header header {
+  height: 6rem;
+}
+
+#header h1 {
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+}
+
+#header a {
+  color: inherit;
+}
+
+#header h1:hover {
+  color: #dc3545!important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  #header h1 {
+    font-size: 3rem;
+  }
+  #header h2 {
+    font-size: 1.5rem;
+  }
+  #header .flex-row {
+    flex-direction: column!important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #header h2 {
+    font-size: 1.15rem;
+  }
+}
